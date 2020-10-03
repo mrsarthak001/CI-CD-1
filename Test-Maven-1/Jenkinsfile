@@ -18,12 +18,5 @@ pipeline{
             bat 'mvn install'
           }
       }
-        
-      
-      stage('Sonar'){
-          steps{
-            bat 'mvn sonar:sonar -Dsonar.host.url=http://localhost:9000 -Dsonar.analysis.mode=publish'
-          }
-      }
     }
 }
